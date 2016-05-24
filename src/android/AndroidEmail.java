@@ -5,7 +5,6 @@ import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import com.google.android.gms.auth.GoogleAuthUtil;
 import com.google.android.gms.common.AccountPicker;
 
 import android.accounts.AccountManager;
@@ -30,7 +29,7 @@ public class AndroidEmail extends CordovaPlugin {
     			public void run() {
     				try {
     	    	        Intent intent = AccountPicker.newChooseAccountIntent(null, null,
-    	    	                new String[] { GoogleAuthUtil.GOOGLE_ACCOUNT_TYPE }, true, null, null, null, null);
+    	    	                new String[] { "com.google" }, true, null, null, null, null);
     	    	        cordova.getActivity().startActivityForResult(intent, REQUEST_CODE_EMAIL);
     	    	    } catch (ActivityNotFoundException e) {
     	    	       	Log.e(TAG, "Activity not found: " + e.toString() );
