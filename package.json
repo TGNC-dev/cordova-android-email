@@ -1,0 +1,33 @@
+{
+  "name": "cordova-android-email",
+  "version": "6.1.2",
+  "description": "Cordova Android Email",
+  "cordova": {
+    "id": "cordova-android-email",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tominou/cordova-android-email.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova",
+    "phonegap",
+    "email",
+    "android",
+    "play"
+  ],
+  "author": "tominou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tominou/cordova-android-email/issues"
+  },
+  "homepage": "https://github.com/tominou/cordova-android-email",
+  "devDependencies": {
+    "cordova": "^6.3.1"
+  }
+}
